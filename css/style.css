@@ -1,0 +1,45 @@
+
+ 
+body {
+  background-image: url("../images/gradient.png");
+  background-repeat: repeat-x;
+}
+
+a {
+  margin-right: 20px;
+  float: left;
+
+  font-family: Helvetica;
+  font-size:   1em;
+  font-weight: bold;
+  color      : #000099;
+  text-decoration: none;
+}
+
+
+
+#app {
+  margin: 10px 40px;
+}
+
+.game {
+  height: 265px;
+}
+
+.game img {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.viewers {
+  font-style: bold;
+  color: #aeaeae;
+}
+
+
+.number {
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+  color: #666;
+}

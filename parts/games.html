@@ -1,0 +1,16 @@
+<h1>Games on steam ({{api.result._total}} games)</h1>
+<input placeholder="Search" class="form-control" ng-model="obj.query"/><br>
+
+<div class="row">
+  <div class="game col-md-2" ng-repeat="(index, data) in api.result.top | filter:obj.query">
+    <a href="#/game/{{data['game']['name']}}">
+      <img ng-src="{{data['game']['box']['medium']}}">
+    </a>
+    <a style="width: 100%" href="#/game/{{data['game']['name']}}">{{data['game']['name']}}</a>
+    <span style="float:left" class="viewers">Viewers: {{data['viewers']}}</span>
+  </div> 
+
+ 
+</div><br><br>
+
+ <a href ng-click="previous()">Previous</a> <a href ng-click="next()">Next</a>

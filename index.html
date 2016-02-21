@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="twitch">
+<head>
+  <title>Games stream</title>
+  <meta charset="UTF-8">
+    <!--  googleapis -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+
+  <!--  css sytle  -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+   <!--  angularjs   -->  
+  <script type="text/javascript" src="angular/dev/angular-route.min.js"></script>
+  <script type="text/javascript" src="angular/dev/ng-infinite-scroll.min.js"></script>
+
+  <script type="text/javascript" src="angular/app.js"></script>
+  <script type="text/javascript" src="angular/controllers/games.js"></script>
+  <script type="text/javascript" src="angular/controllers/streams.js"></script>
+  <script type="text/javascript" src="angular/controllers/channel.js"></script>
+  <script type="text/javascript" src="angular/services/twitchapi.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div ng-view>
+    </div>
+  </div>
+</body>
+</html>

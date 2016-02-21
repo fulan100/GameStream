@@ -1,0 +1,11 @@
+<h1>Games on steam</h1>
+<a ng-href="#/game/{{stream.game}}">Back to {{stream.game}}</a><br>
+<h3>{{stream.channel.display_name}} <span class="viewers">playing</span> {{stream.game}} <span class="viewers">with</span> {{stream.viewers}} viewers</h3>
+<object type="application/x-shockwave-flash"
+          height="549"
+          width="900"
+          id="live_embed_player_flash"
+          data="http://www.twitch.tv/widgets/live_embed_player.swf?channel={{channel}}"
+          bgcolor="#000000">
+
+{{api.result.stream}}

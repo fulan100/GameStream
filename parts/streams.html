@@ -1,0 +1,17 @@
+<h1>{{game_name}} ({{api.result._total}} streams)</h1>
+<a ng-href="#/games">Back to games</a><br><br>
+
+<input placeholder="Search" class="form-control" ng-model="obj.query"/><br>
+<div class="row" infinite-scroll="scroll()">
+  <div class="game col-md-12" ng-repeat="(index, data) in streams | filter:obj.query">
+    <a href="#/channel/{{data['channel']['name']}}">
+      <img ng-src="{{data['preview']['medium']}}">
+    </a>
+      <span class="number">{{data['viewers']}}</span><br><br>
+      <a href="#/channel/{{data['channel']['name']}}">
+        {{data['channel']['display_name']}}
+      </a><br>
+    <span class="viewers">{{data['channel']['status']}}</span>
+  </div>
+  <img ng-src="images/ajax-loader.gif">
+</div>
